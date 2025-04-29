@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>El Reino de la Piedra</title>
     <style>
         body {
@@ -26,8 +26,31 @@
             margin: 0;
             font-size: 2rem;
         }
+        .hero {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
         main {
             padding: 20px;
+        }
+        .description {
+            margin-bottom: 20px;
+        }
+        .catalogo {
+            margin-bottom: 20px;
+        }
+        .catalogo a {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -38,9 +61,18 @@
         <h1>El Reino de la Piedra</h1>
     </header>
 
+    <section class="hero">
+        <img src="portada.jpeg" alt="Imagen del local">
+    </section>
+
     <main>
-        <p>Bienvenidos a nuestro sitio web.</p>
-        <p><a href="https://biolink.info/elreinodelapiedra1" target="_blank">Ver catálogo completo</a></p>
+        <div class="description">
+            <p><strong>El Reino de la Piedra</strong> es un negocio familiar con más de 100 opciones de revestimientos. Atendido por sus dueños, ofrecemos asesoramiento personalizado en cada paso, ayudándote a encontrar la mejor solución para tus proyectos de construcción y decoración.</p>
+        </div>
+
+        <div class="catalogo">
+            <a href="https://biolink.info/elreinodelapiedra1" target="_blank">Ver Catálogo Completo</a>
+        </div>
     </main>
 
 </body>
