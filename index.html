@@ -1,33 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>El Reino de la Piedra</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f2f2f2; }
+    header { background: #333; color: white; padding: 1em; text-align: center; }
+    .carousel { display: flex; overflow: hidden; max-width: 100%; height: 500px; margin-top: 2em; }
+    .carousel img { width: 100%; object-fit: cover; flex-shrink: 0; transition: transform 1s ease-in-out; }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(-100%); }
+      40% { transform: translateX(-200%); }
+      60% { transform: translateX(-300%); }
+      80% { transform: translateX(-400%); }
+      100% { transform: translateX(0%); }
+    }
+    .carousel-inner {
+      display: flex;
+      width: 500%;
+      animation: slide 30s infinite;
+    }
+    footer { text-align: center; padding: 2em; background: #333; color: white; margin-top: 3em; }
+  </style>
 </head>
 <body>
   <header>
     <h1>El Reino de la Piedra</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="obras_realizadas.html">Obras realizadas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <p>Obras Realizadas</p>
   </header>
-  <main>
-    <section class="bienvenida">
-      <h2>Bienvenidos</h2>
-      <p>Somos especialistas en revestimientos de piedras naturales para obras únicas.</p>
-    </section>
-    <section class="llamada-accion">
-      <a href="https://wa.link/tsf7cr" class="btn">Consultanos por WhatsApp</a>
-    </section>
-  </main>
-  <footer id="contacto">
-    <p>&copy; 2025 El Reino de la Piedra</p>
+
+  <section class="carousel">
+    <div class="carousel-inner">
+      <img src="img/obra1.jpeg" alt="Obra 1">
+      <img src="img/obra2.jpeg" alt="Obra 2">
+      <img src="img/obra3.jpeg" alt="Obra 3">
+      <img src="img/obra4.jpeg" alt="Obra 4">
+      <img src="img/obra5.jpeg" alt="Obra 5">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 El Reino de la Piedra
   </footer>
 </body>
 </html>
